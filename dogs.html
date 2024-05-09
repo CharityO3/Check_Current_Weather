@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favorite dog 💕</title>
+    <style>
+      body {
+        background: radial-gradient(
+          329px at 3.1% 9.3%,
+          rgb(251, 204, 235) 28.1%,
+          rgba(221, 221, 221, 0.15) 100.7%
+        );
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background-color: #b9b8b9;
+        border-radius: 10px;
+        min-height: 100vh;
+        padding-bottom: 50px;
+        position: relative;
+        text-align: justify;
+      }
+      h1 {
+        text-align: center;
+        color: #000000;
+      }
+      h2 {
+        text-align: center;
+        border: 3px solid #555;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        width: 300px;
+        margin-bottom: 50px;
+      }
+      .hr-color {
+        border-color: #000000;
+        border-style: solid;
+        border-width: 0.1px;
+      }
+      .first {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+      }
+      .second {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+      }
+      .more-about {
+        color: blue;
+        display: inline;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .more-about:hover {
+        text-decoration: underline;
+      }
+      .more-images {
+        color: blue;
+        display: inline;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .more-images:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 60px auto 30px;
+        background-color: #2b1460;
+        color: #ecf2f9;
+        font-size: 18px;
+        padding: 15px 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 5px 5px 5px 10px rgba (0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #5d1177;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 97.4%;
+        background-color: #b9b8b9;
+        color: #000000;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The German Shepard</h1>
+      <h2><em>My favorite breed of dogs </em><strong>🐶</strong></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/097/original/images.jpeg?1697102999"
+        alt="german shepard"
+      />
+      <hr class="hr-color" />
+      <p class="first">
+        The <strong>German Shepherd</strong>, also known in Britain as an
+        Alsatian, is a German breed of working dog of medium to large size. The
+        breed was developed by Max von Stephanitz using various traditional
+        German herding dogs from 1899. It was originally bred as a herding dog,
+        for herding sheep.
+        <a
+          href="https://en.wikipedia.org/wiki/German_Shepherd"
+          target="_blank"
+          class="more-about"
+          >Learn more about the German Shepard on Wikipedia.
+        </a>
+      </p>
+
+      <p class="second">
+        German Shepherds are known for their protective instincts, as they often
+        bark at any unfamiliar sounds or faces. Raising one is not without its
+        challenges, as you might need to invest time and effort into socializing
+        it with other dogs and people. Seeking the assistance of a professional
+        dog trainer to address any behavioral issues and ensure a well-rounded,
+        well-behaved dog is highly advisable.
+        <a
+          href="https://www.google.com/search?sca_esv=572820686&sxsrf=AM9HkKnQNUG87vH6e9SH0uW5fVeTVWR8Ag:1697102958868&q=german+shepherd&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjLvIqYmfCBAxVIDuwKHZl1CEkQ0pQJegQIDhAB&biw=1518&bih=778&dpr=1.25"
+          target="_blank"
+          class="more-images"
+          >See more images of the German Shepard.</a
+        >
+      </p>
+
+      <hr class="hr-color" />
+      <br />
+
+      To adopt one, click the button below!
+      <button class="adoptButton">🐶Click to Adopt🐶</button>
+
+      <footer>
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/charity-orhoridiohwo-548873150/"
+          target="_blank"
+          >Charity Orhoridiohwo</a
+        >
+      </footer>
+    </div>
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+        heading.style.color = "#4B0082";
+      }
+      function adopt() {
+        let name = prompt("what is your name");
+        let email = prompt("what is your email address");
+        let choice = prompt("Do you love dogs? Enter yes or no:");
+        choice = choice.toLowerCase();
+        choice = choice.trim();
+        if (choice === "yes") {
+          let breed = prompt("What is your favorite breed?");
+          emoji = "🐶";
+          updateHeading(
+            `Thank you ${name} for loving ${breed} dogs. We'll be in touch by email! ${emoji}`
+          );
+        } else if (choice === "no") {
+          emoji = "☹️";
+          updateHeading(`Thank you ${name} for your feedback! ${emoji}`);
+        } else {
+          updateHeading("This website is about dogs!");
+        }
+      }
+
+      let adoptButton = document.querySelector(".adoptButton");
+      adoptButton.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
