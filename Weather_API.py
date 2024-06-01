@@ -49,7 +49,7 @@ def display_weather_forecast(city):
 
 def display_credit(name):
   """Displays credit message"""
-  print(f"\n\n\n\n[bold white]This app was built by {name} [/bold white]")
+  print(f"\n\n\n\n[bold white]This app was built by {name}. [/bold white]")
 
 
 welcome_message()
