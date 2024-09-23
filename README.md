@@ -1,13 +1,17 @@
 Get information on the current and forecast weather in any city.
 
-This Python script provides the current weather and a 5-day forecast for any city using the SheCodes Weather API. It features styled terminal output through the rich library, and allows users to input a city name to retrieve weather data.
+## Weather App Summary
 
-Key Features:
-Displays current weather and 5-day forecast.
-Uses requests for API calls and rich for styled output.
-Prompts user to enter a city for weather updates.
-Requirements:
-Python 3, requests, and rich libraries.
+This Python script provides the current weather and a 5-day forecast for any city using the SheCodes Weather API. It features styled terminal output through the `rich` library, and allows users to input a city name to retrieve weather data.
+
+### Key Features:
+- Displays current weather and 5-day forecast.
+- Uses `requests` for API calls and `rich` for styled output.
+- Prompts user to enter a city for weather updates.
+
+### Requirements:
+- Python 3, `requests`, and `rich` libraries.
+
 Developed by Charity Orhoridiohwo.
 
 
