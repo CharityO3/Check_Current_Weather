@@ -10,7 +10,5 @@ This Python script provides the current weather and a 5-day forecast for any cit
 ### Requirements:
 - Python 3, `requests`, and `rich` libraries.
 
-Developed by Charity Orhoridiohwo.
-
 
 ![Weather_App_Response](https://github.com/CharityO3/Check_Current_Weather/assets/79048698/f184018a-4399-42b5-9405-c9a74bbf8fda)
